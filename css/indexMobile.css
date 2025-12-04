@@ -1,0 +1,313 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555;
+}
+
+.overrallwraper {
+    width:100% ;
+    min-height:100vh ;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header .fa-bars {
+font-size: 24px;
+}
+
+header .fa-times {
+    font-size: 28px;
+    display: flex;
+}
+
+.logoContainer {
+    width: 200px;
+
+}
+
+.logoContainer img {
+    width: 100%;
+}
+
+.navLinksContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    top:80px ;
+    display: flex;
+    justify-content: center;
+    right: 100%;
+    transition: .5s;
+    z-index: 1;
+
+ 
+}
+
+.showNavlinkContainer {
+    right: 0%;
+}
+
+.navLinksContainer ul li {
+    text-align: center;
+    margin-top: 60px;
+    list-style: none;
+}
+ .navLinksContainer ul li a {
+    text-decoration: none;
+ }
+
+header .fa-search {
+    font-size: 24px;
+} 
+
+#closeSearch {
+    display: none;
+}
+
+.seachContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    top: 100%;
+    padding: 40px;
+    transition: 0.5s;
+    z-index: 1;
+
+
+}
+
+.showSearchContainer {
+    top: 80px;
+}
+
+.seachContainer h1 {
+    margin-top: 60px; 
+    text-align: center;
+
+}
+
+.seachContainer input {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    background-color: #e5e5e5;
+    padding: 0px 20px;
+    
+}
+
+.seachContainer button {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ff0000;
+    font-size: 24px;
+    color: #e5e5e5;
+    
+}
+
+.bannerContainer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+.bannerContainer .fa-arrow-left, .bannerContainer .fa-arrow-right {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px;
+    font-size: 24px;
+
+}
+
+.bannerContainer .fa-arrow-left {
+    z-index: 1;
+}
+
+.bannerContainer .fa-arrow-right {
+    left: 90%;
+}
+
+.sliderContainer {
+    width: 100%;
+    display: flex;
+}
+
+.sliderContainer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.popularBlogContainer {
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+
+}
+
+.popularBlogContainer h1 {
+width: 100%;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.blogQuickLinks {
+    width: 100%;
+
+}
+
+.blogQuickLinks button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    /* transition: .5s; */
+}
+
+/* .blogQuickLinks button:hover {
+    background-color: #ddd;
+} */
+
+/* .blogQuickLinks button:nth-child(1){
+    background-color: #ff0000;
+    color: #f5f5f5;
+} */
+
+.allBtn{
+    background-color: #ff0000;
+    color: #f5f5f5;
+}
+
+.hoverStay{
+    background-color: #ff0000;
+    color: #ffff;
+}
+.imagesWithTextBoxContainer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+
+}
+
+.imageBox {
+    width: 120px;
+    height: 120px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}
+
+.imageBox img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.textBox {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+
+.textBox h3 {
+    font-size: 20px;
+    line-height: 28px;
+
+}
+
+.textBox .fa-clock {
+    font-size: 15px;
+    margin-right: 3px;
+    color: #838383;
+}
+
+.textBox p {
+    font-size: 15px;
+    color: #838383;
+}
+
+.overLayForBlogQuicklinks{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 100%;
+    left: 0px;
+    transition: .5s;
+    z-index: 1;
+}
+
+.showOverLay {  
+top: 0%;
+
+}
+
+.moreBlogQuickLinks {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-top-left-radius: 30px ; 
+    border-top-right-radius: 30px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.moreBlogQuickLinks button {
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+    margin: 10px;
+}
+
+.popularBlogImageAndContentOverallwrapper{
+    width: 100%;
+    display: flex;
+
+}
+
+.allBlogContainer, .politicsBlogContainer, .musicBlogContainer{
+
+    width: 100%;
+    flex-shrink: 0;
+    padding: 10px;
+
+}
+
+.popularBlogImageAndContentOverallwrapperTwo{
+   width: 100%; 
+   display: none;
+}
+
+.moreBlogContainer, .SportsBlogContainer, .NewsBlogContainer{
+    width: 100%;
+    flex-shrink: 0;
+    padding: 20px;
+}
